@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEBO DESIGNGS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:blue;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+		
+		
+		.heading-container {
+            display: flex;
+            align-items: center; /* Aligns items vertically in the middle */
+            justify-content: center; /* Centers the heading and logos */
+        }
+
+        .logo {
+            width: 70px; /* Adjust logo size */
+            margin:15px; /* Adds space between logo and heading */
+        }
+
+		
+        h1 {
+            margin: 0;
+			font-size: 50px;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            color: transparent;
+            background-clip: text;
+            animation: bounce 2s infinite, gradient 5s ease infinite;
+			
+			
+			
+			
+			
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            text-align: center;
+            width: 250px;
+            padding: 20px;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .product-card button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .product-card button:hover {
+            background-color: #555;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #555;
+        }
+		
+		
+		 .whatsapp-button {
+            background-color:#008000 ;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            font-size: 16px;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+		
+		 .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+		
+		
+    </style>
+</head>
+<body>
+    <header>
+	<div class="heading-container">
+        <!-- Logo on the left -->
+        <img class="logo" src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\TOOLS & LOG\logo1.jpg" alt="Left Logo">
+        
+        <!-- Heading -->
+        <h1>LEBO DESIGNGS</h1>
+		
+
+
+        <!-- Logo on the right -->
+        <img class="logo" src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\TOOLS & LOG\logo2.jpg" alt="Right Logo">
+    </div>
+	
+	
+
+    </header>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('MD', 400)">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+        <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual2.jpg" alt="Photo 2">  
+            <p class="price">$40</p>
+            <button onclick="showForm('Pants 1', 40)">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual3.jpg" alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('LADIES SUITS', R400)">Buy Now</button>
+        </div>
+  
+
+
+        <!-- Product 4-->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual4.jpg" alt="Photo 3"> 
+            <p class="price">R1900</p>
+             <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\suits1.jpg"alt="Photo 3"> 
+            <p class="price">R1450</p>
+            <button onclick="showForm('ladies suits', 1450)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 6 -->
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe1.jpg"alt="Photo 3">  
+            <p class="price">R850</p>
+            <button onclick="showForm('ladies suits', 850)">Buy Now</button>
+        </div>
+		
+		
+	
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe2.jpg"alt="Photo 3"> 
+            <p class="price">R850</p>
+           <button onclick="showForm('SESHWESHWE', 800)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 8-->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric1.jpg"alt="Photo 3"> 
+            <p class="price">R1900</p>
+            <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric3.jpg"alt="Photo 3"> 
+            <p class="price">R1890</p>
+            <button onclick="showForm('MD',1890)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$75</p>
+            <button onclick="showForm('Jacket 1', 75)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 11 -->
+		
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$78</p>
+            <button onclick="showForm('Jacket 1', 78)">Buy Now</button>
+        </div>
+  
+		
+		  <div class="container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('MD', 400)">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+        <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual2.jpg" alt="Photo 2">  
+            <p class="price">$40</p>
+            <button onclick="showForm('Pants 1', 40)">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual3.jpg" alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('LADIES SUITS', R400)">Buy Now</button>
+        </div>
+  
+
+
+        <!-- Product 4-->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual4.jpg" alt="Photo 3"> 
+            <p class="price">R1900</p>
+             <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\suits1.jpg"alt="Photo 3"> 
+            <p class="price">R1450</p>
+            <button onclick="showForm('ladies suits', 1450)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 6 -->
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe1.jpg"alt="Photo 3">  
+            <p class="price">R850</p>
+            <button onclick="showForm('ladies suits', 850)">Buy Now</button>
+        </div>
+		
+		
+	
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe2.jpg"alt="Photo 3"> 
+            <p class="price">R850</p>
+           <button onclick="showForm('SESHWESHWE', 800)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 8-->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric1.jpg"alt="Photo 3"> 
+            <p class="price">R1900</p>
+            <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric3.jpg"alt="Photo 3"> 
+            <p class="price">R1890</p>
+            <button onclick="showForm('MD',1890)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$75</p>
+            <button onclick="showForm('Jacket 1', 75)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 11 -->
+		
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$78</p>
+            <button onclick="showForm('Jacket 1', 78)">Buy Now</button>
+        </div>
+  
+		  <div class="container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('MD', 400)">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+        <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual2.jpg" alt="Photo 2">  
+            <p class="price">$40</p>
+            <button onclick="showForm('Pants 1', 40)">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual3.jpg" alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('LADIES SUITS', R400)">Buy Now</button>
+        </div>
+  
+
+
+        <!-- Product 4-->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual4.jpg" alt="Photo 3"> 
+            <p class="price">R1900</p>
+             <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\suits1.jpg"alt="Photo 3"> 
+            <p class="price">R1450</p>
+            <button onclick="showForm('ladies suits', 1450)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 6 -->
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe1.jpg"alt="Photo 3">  
+            <p class="price">R850</p>
+            <button onclick="showForm('ladies suits', 850)">Buy Now</button>
+        </div>
+		
+		
+	
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe2.jpg"alt="Photo 3"> 
+            <p class="price">R850</p>
+           <button onclick="showForm('SESHWESHWE', 800)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 8-->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric1.jpg"alt="Photo 3"> 
+            <p class="price">R1900</p>
+            <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric3.jpg"alt="Photo 3"> 
+            <p class="price">R1890</p>
+            <button onclick="showForm('MD',1890)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$75</p>
+            <button onclick="showForm('Jacket 1', 75)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 11 -->
+		
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$78</p>
+            <button onclick="showForm('Jacket 1', 78)">Buy Now</button>
+        </div>
+  
+		  <div class="container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('MD', 400)">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+        <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual2.jpg" alt="Photo 2">  
+            <p class="price">$40</p>
+            <button onclick="showForm('Pants 1', 40)">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual3.jpg" alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('LADIES SUITS', R400)">Buy Now</button>
+        </div>
+  
+
+
+        <!-- Product 4-->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual4.jpg" alt="Photo 3"> 
+            <p class="price">R1900</p>
+             <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\suits1.jpg"alt="Photo 3"> 
+            <p class="price">R1450</p>
+            <button onclick="showForm('ladies suits', 1450)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 6 -->
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe1.jpg"alt="Photo 3">  
+            <p class="price">R850</p>
+            <button onclick="showForm('ladies suits', 850)">Buy Now</button>
+        </div>
+		
+		
+	
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe2.jpg"alt="Photo 3"> 
+            <p class="price">R850</p>
+           <button onclick="showForm('SESHWESHWE', 800)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 8-->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric1.jpg"alt="Photo 3"> 
+            <p class="price">R1900</p>
+            <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric3.jpg"alt="Photo 3"> 
+            <p class="price">R1890</p>
+            <button onclick="showForm('MD',1890)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$75</p>
+            <button onclick="showForm('Jacket 1', 75)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 11 -->
+		
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$78</p>
+            <button onclick="showForm('Jacket 1', 78)">Buy Now</button>
+        </div>
+  
+		  <div class="container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('MD', 400)">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+        <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual2.jpg" alt="Photo 2">  
+            <p class="price">$40</p>
+            <button onclick="showForm('Pants 1', 40)">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual3.jpg" alt="Photo 3"> 
+            <p class="price">R400</p>
+            <button onclick="showForm('LADIES SUITS', R400)">Buy Now</button>
+        </div>
+  
+
+
+        <!-- Product 4-->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\casual4.jpg" alt="Photo 3"> 
+            <p class="price">R1900</p>
+             <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\suits1.jpg"alt="Photo 3"> 
+            <p class="price">R1450</p>
+            <button onclick="showForm('ladies suits', 1450)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 6 -->
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe1.jpg"alt="Photo 3">  
+            <p class="price">R850</p>
+            <button onclick="showForm('ladies suits', 850)">Buy Now</button>
+        </div>
+		
+		
+	
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\sesweswe2.jpg"alt="Photo 3"> 
+            <p class="price">R850</p>
+           <button onclick="showForm('SESHWESHWE', 800)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 8-->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric1.jpg"alt="Photo 3"> 
+            <p class="price">R1900</p>
+            <button onclick="showForm('MD', 1900)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric3.jpg"alt="Photo 3"> 
+            <p class="price">R1890</p>
+            <button onclick="showForm('MD',1890)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$75</p>
+            <button onclick="showForm('Jacket 1', 75)">Buy Now</button>
+        </div>
+  
+
+        <!-- Product 11 -->
+		
+		<div class="product-card">
+            <img src= "C:\Users\USER\Searches\HTML\LEBO DESIGNS\PHOTOS\matric2.jpg"alt="Photo 3"> 
+            <p class="price">$78</p>
+            <button onclick="showForm('Jacket 1', 78)">Buy Now</button>
+        </div>
+  
+		
+        
+
+
+  </div>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <!-- Inquiry Form -->
+    <div class="form-container" id="form-container" style="display: none;">
+        <h2>Purchase Inquiry</h2>
+        <form action="lm56000372023@tangaza.ac.ke" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="product" id="product-name" readonly>
+            <input type="number" name="price" id="product-price" readonly>
+            <textarea name="message" placeholder="Any additional information or questions" rows="4"></textarea>
+            <button type="submit">Send Inquiry</button>
+        </form>
+		
+		  <!-- WhatsApp Link -->
+        <a href="https://wa.me/+26659096327?text=Hi%2C%20I%20want%20to%20buy%20%5Bproduct_name%5D%20for%20%5Bprice%5D.%20Please%20get%20in%20touch." target="_blank">
+            <button class="whatsapp-button">WHATSAPP THE STORE</button>
+        </a>
+
+      
+		
+		
+        <button onclick="closeForm()">Close</button>
+    </div>
+
+    <script>
+        function showForm(product, price) {
+            document.getElementById("form-container").style.display = "block";
+            document.getElementById("product-name").value = product;
+            document.getElementById("product-price").value = price;
+        }
+
+        function closeForm() {
+            document.getElementById("form-container").style.display = "none";
+       
+	   }
+        // Update WhatsApp message with the product name and price dynamically
+        function updateWhatsAppLink(product, price) {
+            const message = `Hi, I want to buy ${product} for $${price}. Please get in touch.`;
+            const whatsappLink = `https://wa.me/+26659096327?text=${encodeURIComponent(message)}`;
+            document.querySelector('.whatsapp-button').setAttribute('href', whatsappLink);
+
+        }
+	   
+		      
+
+        
+       
+    </script>
+	  <div class="footer">
+        <p>&copy; 2025 LEBO DESIGNGS</p>
+    </div>
+</body>
+</html>
